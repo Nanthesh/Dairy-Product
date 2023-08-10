@@ -1,0 +1,33 @@
+body
+{
+    background-color: rgb(249, 247, 247);
+}
+.login{
+    width: 360px;
+    margin-top: 250px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.otp {
+    align-items: center;
+    width: 250px;
+    display: flex;
+    justify-content:center;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+.home {
+    align-items: center;
+    width: 250px;
+    display: flex;
+    justify-content:center;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+
