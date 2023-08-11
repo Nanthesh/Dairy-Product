@@ -76,4 +76,17 @@ img {
   top: 0;
   width: 100%;
 }
-
+.home {
+  align-items: center;
+  width: 250px;
+  display: flex;
+  justify-content:center;
+  margin-left: 30px;
+  border-radius: 50px;
+}
+.submit
+{
+  text-align: center;
+  justify-content: center;
+  padding: auto;
+}
