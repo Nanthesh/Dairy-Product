@@ -1,92 +1,184 @@
-.align
-{
-    margin-top: 50px;
-    height:80%;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: white;
-    margin-bottom: 50px;
+.align {
+  margin-top: 50px;
+  height: 80%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  margin-bottom: 50px;
 }
-body
-{
-    background-color: rgb(249, 247, 247);
-}
-img {
-    display: block;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: auto;
-    margin-top: 10%;
-    width: 80%;
-  }
-  #val
-  {
-    border: none;
-    box-shadow: none;
-    text-align: center;
-  }
-  #design
-  {
-    border-radius: 25px;
-    
-  }
 
-.footer{
-  width:100%;
-  bottom:0;
+body {
+  background-color: rgb(249, 247, 247);
 }
-.socialIcon{
+
+img {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 80%;
+}
+
+#val {
+  border: none;
+  box-shadow: none;
+  text-align: center;
+}
+
+#design {
+  border-radius: 25px;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+}
+
+.socialIcon {
   display: flex;
   justify-content: center;
 }
-.socialIcon a{
+
+.socialIcon a {
   text-decoration: none;
   padding: 10px;
   margin: 10px;
   border-radius: 50%;
   background-color: rgb(192, 192, 216);
 }
-.socialIcon a i{
+
+.socialIcon a i {
   font-size: 2em;
   color: rgb(7, 7, 6);
   opacity: 0.9;
+}
 
+.footerNav {
+  margin: 30px 0;
 }
-.footerNav{
-  margin:30px 0; 
-}
+
 .footerNav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
-.footerNav ul li a{
+
+.footerNav ul li a {
   color: rgb(0, 0, 0);
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
   opacity: 0.7;
 }
-.footerbottom{
-  padding:10px;
+
+.footerbottom {
+  padding: 10px;
   text-align: center;
 }
-.navbar
-{
+
+.navbar {
   top: 0;
   width: 100%;
 }
+
 .home {
   align-items: center;
   width: 250px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-left: 30px;
   border-radius: 50px;
 }
-.submit
-{
+
+.submit {
   text-align: center;
   justify-content: center;
   padding: auto;
+}
+
+.font h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 80px;
+}
+
+.half-ruler {
+  width: 65%;
+  height: 2px;
+  background-color: black;
+}
+
+.para {
+  width: 50%;
+  font-size: 30px;
+}
+
+.main-page {
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+}
+
+#button {
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 20px); 
+  margin: 10px;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-details h3 {
+  font-size: 1.25rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+.filter-sidebar {
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px; 
+  padding: 15px;
+  border-radius: 5px;
+  overflow-y: scroll; 
+}
+
+.filter-option {
+  margin-bottom: 10px;
 }
