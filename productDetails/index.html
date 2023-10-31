@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>productDetails</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -53,45 +53,39 @@
       </div>
     </div>
   </nav>
+  <h1>Milk</h1>
+  <p>Order by <span style="color:rgb(187, 39, 39);">10:00pm, Today </span>& get the delivery by <span style="color:rgb(187, 39, 39);">Tomorrow</span></p>
     <div class="contact container d-flex justify-content-center align-items-center">
-        <form id="formData">
-                <div class="title">
-                    <h1>Submit your request</h1>
-                    <p>Your request will be processed and our support staff will get back to you in 24 hours.</p>
-                </div>
-            <div class="mb-3">
-              <label for="exampleInputName1" class="form-label">Name*</label>
-              <input type="text" class="form-control" id="exampleInputName1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" >
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPhone1" class="form-label">Phone*</label>
-                    <input type="number" class="form-control" id="exampleInputPhone1" >
-                  </div>
-                  <div class="form-group row">
-                    <label class="mb-3">Preferred way to contact*</label>
-                    <div class="mb-3">
-                        <div class="form-check form-check-inline preference">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Email</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Call</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                  <label class="mb-3">Message*</label>
-                  <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
-                </div>
-                <button type="reset" class="btn btn-danger">Clear</button>
-                <button type="submit" class="btn btn-success">Submit</button>
-          </form>
+        
+      <div class="product-image">
+        <img src="product-image.jpg" alt="Product Image">
+    </div> 
+    <div class="product-info">
+      <label for="frequency"><h5>Frequency</h5></label><br>
+      <input type="radio" name="frequency" value="everyday" id="everyday"><label for="everyday">Everyday</label><br>
+      <input type="radio" name="frequency" value="onetime" id="onetime"><label for="onetime">Onetime Order</label><br>
+      <input type="radio" name="frequency" value="customize" id="customize"><label for="customize">Customize</label><br>
+      <input type="radio" name="frequency" value="date" id="date"><label for="date">Choose Date</label>
+      <input type="date" id="selected-date" style="display: none;">
+      <br>
+      <label for="quantity"><h5>Quantity</h5></label><br>
+      <div class="counter-container">
+        <button type="number" id="minus" class="counter-button">-</button>
+        <div class="counter-value" id="count">0</div>
+        <button type="number" id="plus" class="counter-button">+</button>
+      </div>
+
+      <br>
+      <div class="product-price">
+          $19.99
+      </div>
+      <div class="product-actions">
+          <button class="btn">Order Now</button>
+          <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+  </div>
         </div>
+
         <div class="footer">
           <div class="socialIcon">
               <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -111,6 +105,5 @@
               <p>2023, Lactancia. All rights reserved</p>
           </div>
         </div>
-        <script src="./script.js"></script>
 </body>
 </html>
