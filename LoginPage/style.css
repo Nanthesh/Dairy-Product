@@ -21,6 +21,7 @@ body
     justify-content:center;
     margin-left: 30px;
     border-radius: 50px;
+    background-color: rgb(187, 39, 39);
 }
 .home {
     align-items: center;

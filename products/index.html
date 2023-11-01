@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
-    <title>Product Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+  <title>Product Page</title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="../Home/index.html">Lactancia</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active ps-5" aria-current="page" href="../Home/index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="nav-link active ps-5" aria-current="page" href="../Home/index.html"><i
+                class="fa-solid fa-house"></i> Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link ps-5" href="../Contact/index.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ps-5" href="../TermsOfService/index.html"><i class="fa-solid fa-bars"></i> Terms of Service</a>
+            <a class="nav-link ps-5" href="../TermsOfService/index.html"><i class="fa-solid fa-bars"></i> Terms of
+              Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ps-5" href="../PrivacyPolicy/index.html"><i class="fa-solid fa-eye-slash"></i> Privacy Policy</a>
+            <a class="nav-link ps-5" href="../PrivacyPolicy/index.html"><i class="fa-solid fa-eye-slash"></i> Privacy
+              Policy</a>
           </li>
           <li class="nav-item">
             <a class="nav-link ps-5" href="../products/index.html"><i class="fa-solid fa-check"></i> Products</a>
@@ -64,162 +73,230 @@
     </div>
   </div>
 
-  <div class="main-page justify-content-center align-items-center">
-    <button type="button" id="button" class="btn btn-danger">ALL PRODUCTS</button>
-    <button type="button" id="button" class="btn btn-danger">PRODUCTS MADE FROM MILK</button>
-    <button type="button" id="button" class="btn btn-danger">OTHERS</button>
+  <div class="container-fluid mt-5 mb-5">
+    <div class="row g-2">
+      <div class="col-md-3">
+        <div class="t-products p-2">
+        
+          <h6 class="text-uppercase filter"> <i class="fa-solid fa-filter"> Filters</i></h6>
+          <div class="p-lists">
+            <div class="d-flex justify-content-between mt-2">
+              <span>Milk Products</span>
+              <span>7</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>Coconut Products</span>
+              <span>2</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>Wheat Products</span>
+              <span>1</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>Egg Product</span>
+              <span>2</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>Others</span>
+              <span>1</span>
+            </div>
+          </div>
+        </div>
+        <!-- Filter Option where all the products entered -->
+        <div class="type p-2 mb-2">
+          <div class="heading d-flex justify-content-between align-items-center">
+            <h6 class="text-uppercase">Products</h6> <span>--</span>
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault"> Milk </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Ghee </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Whole Milk </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Cheese </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Organic Milk </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Paneer</label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Yogurt </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Bread</label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Honey </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Virgin coconut oil </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> County Egg </label> </div> 
+          </div>
+          <div class="d-flex justify-content-between mt-2">
+            <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                checked> <label class="form-check-label" for="flexCheckChecked"> Coconut </label> </div> 
+          </div>
+        </div>
+      </div>
+      <!-- All the products-->
+      <div class="col-md-9">
+        <div class="row g-2">
+          <div class="col-md-4">
+            <div class="product py-4"> 
+              <div class="text-center"> <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D" width="200"> </div>
+              <div class="about text-center">
+                <h5>Milk</h5> <span>$4.50</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4"> 
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/02/e1/b3/02e1b38d9160302f07fe7dd747c15893.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Ghee </h5> <span>$2.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4">
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/93/8e/98/938e98da7b1c9b1eacd0ef437f0590cd.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Whole milk</h5> <span>$5.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4"> 
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/d4/8a/31/d48a310fc9c75d5d880facf6cc8d8a89.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Cheese</h5> <span>$8.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4">\
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/68/b0/a9/68b0a9f43fd460c61db04c7d5ac313c2.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Organic Cow Milk</h5> <span>$8.90</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4"> 
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/78/3e/48/783e48a2d0eb3e8df17bb8986206dfea.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Paneer</h5> <span>$6.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4"> 
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/5f/b5/fa/5fb5fae8f663990f5bd2578892980afb.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Yogurt</h5> <span>$4.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4">
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/60/28/4d/60284d9718e82166d2dce54f3c2207b7.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Bread</h5> <span>$4.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4">
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/f9/1b/74/f91b745881f4101c75c6e0172698f054.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Honey</h5> <span>$14.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4"> 
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/21/59/0d/21590d1492266abe982e6d52d38db0ce.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Virgin Coconut Oil</h5> <span>$15.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4">
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/83/f7/89/83f789a9a2a0ea00feb9d35e697e236c.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Country Egg</h5> <span>$9.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product py-4">
+              <div class="text-center"> <img src="https://i.pinimg.com/474x/6b/74/cf/6b74cfe92a556f48ab81bd0543eb7b02.jpg" width="200"> </div>
+              <div class="about text-center">
+                <h5>Coconut</h5> <span>$8.99</span>
+              </div>
+              <div class="cart-button mt-3 px-2 d-flex justify-content-between align-items-center"> <button
+                  class="btn btn-primary text-uppercase">Order</button>
 
-    <div class="card-container">
-      <div class="row">
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
+              </div>
+            </div>
         </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-        <div class="product-card">
-          <img src="product-image.jpg" alt="Product Image">
-          <div class="product-details">
-            <h3>Product Name</h3>
-            <p>Product Description</p>
-            <p class="price">$99.99</p>
-            <button class="btn btn-danger">Order</button>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
-
+  </div>
   <div class="footer">
     <div class="socialIcon">
       <a href="#"><i class="fa-brands fa-facebook" target="_blank"></i></a>
@@ -239,4 +316,5 @@
     </div>
   </div>
 </body>
+
 </html>
